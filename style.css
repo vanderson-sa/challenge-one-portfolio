@@ -322,7 +322,7 @@ section.academic{
 
 }
 
-/* experiência*/
+/* Projetos*/
 
 section.projeto {
     display: flex;
@@ -330,123 +330,448 @@ section.projeto {
     align-items: center;
     padding: 50px;
     gap: 32px;
+}
 
-    .experience__section__title {
-        color: var(--cor-subtitulos);
-        font-size: 32px;
-    }
-    
-    .project-container { 
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        padding: 20px;
-        width: 100%;
-        max-width: 1200px;
-        box-sizing: border-box;
-    }
+.projeto h2 {
+    color: var(--cor-subtitulos);
+    font-size: 32px;
+}
 
-    .card {
-        border-radius: 4px;
-        padding: 20px;
-        box-sizing: border-box;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        font-family: 'Archivo', sans-serif;
-        color: var(--cor-subtitulos);
-    }
-    
-    .project-image-container {
-        position: relative;
-        width: 100%;
-    }
-    
-    .project-image {
-        width: 100%;
-        border-radius: 4px;
-    }
-    
-    .card-highlight {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 4px;
-        height: 100%;
-        background: var(--cor-subtitulos);
-        border-radius: 4px 0px 0px 4px;
-    }
-    
-    .card-title {
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 29px;
-        margin: 20px 0 10px 0;
-    }
-    
-    .card-description {
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 27px;
-        margin-bottom: 10px;
-        color: var(--branco-texto);
-    }
-    
-    .card-technologies {
-        display: flex;
-        font-size: 30px;
-        padding: 0px 0px 20px 0px;
-        gap: 10px;
-    }
-    
-    .button-container {
-        display: flex;
-        gap: 10px;
-        margin-top: 10px;
-    }
-    
-    .button {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 40px;
-        border-radius: 4px;
-        font-weight: 500;
-        font-size: 16px;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    
-    .button-primary {
-        background: var(--cor-subtitulos);
-        color: var(--background-auxilio-2);
-    }
-    
-    .button-secondary {
-        background: #0E0E0E;
-        border: 2px solid var(--cor-subtitulos);
-        color: var(--cor-subtitulos);
-    }
+.project-container { 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
 
+
+
+.card {
+    border-radius: 4px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Archivo', sans-serif;
+    color: var(--cor-subtitulos);
+}
+
+.project-image-container {
+    position: relative;
+    width: 100%;
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.card-highlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--cor-subtitulos);
+    border-radius: 4px 0px 0px 4px;
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 20px 0 10px 0;
+}
+
+.card-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 10px;
+    color: var(--branco-texto);
+}
+
+.card-technologies {
+    display: flex;
+    font-size: 30px;
+    padding: 0px 0px 20px 0px;
+    gap: 10px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button-primary {
+    background: var(--cor-subtitulos);
+    color: var(--background-auxilio-2);
+}
+
+.button-secondary {
+    background: #0E0E0E;
+    border: 2px solid var(--cor-subtitulos);
+    color: var(--cor-subtitulos);
 }
 
 /*Contato*/
 
 section.formcontato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 50px 200px 50px;
+    gap: 10px;
+    background-color: var(--background-auxilio-2);
+
+    .formcontato__img {
+        width: 368px;
+        height: 368px;
+        object-fit: cover;
+    }
+    
+    .formcontato__contacto {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10%;
+    }
+    
+    .formcontato__text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .formcontato__title {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 37.57px;
+        padding-bottom: 20px;
+        color:var(--cor-subtitulos);
+    }
+    
+    .formcontato__subtext {
+        font-family: 'Archivo', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18.78px;
+        color:var(--cor-contraste);
+        padding-bottom: 10px;
+    }
+    
+    .formcontato__form {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+    }
+    
+    .formcontato__input {
+        font-family: 'Archivo', sans-serif;
+        color: var(--branco-texto);
+        height: 56px;
+        width: 100%;
+        padding: 0px 12px 0px 12px;
+        background-color: var(--background-destaque);
+        border: none;
+    }
+    
+    .formcontato__textarea {
+        height: 8rem;
+        width: 100%;
+        font-family: 'Archivo', sans-serif;
+        color: var(--branco-texto);
+        background-color: var(--background-destaque);
+        padding: 12px 12px 0px 12px;
+        border: none;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .mensagem__erro {
+        color: var(--texto-destaque);
+        font-size: 14px;
+    }
+    
+    .formcontato__botao {
+        display: flex;
+        padding: 16px;
+        justify-content: center;
+        background-color: var(--cor-subtitulos);
+        color: var(--branco-texto);
+        font-family: 'Archivo', sans-serif;
+        font-weight: 400;
+        font-size: 16px; 
+        border: none;
+        border-radius: 5px;
+    }
+    
+    #mensagem-sucesso {
+        display: flex;
+        flex-direction: column-reverse;
+        color: var(--texto-destaque);
+        font-family: 'Andada Pro', sans-serif; 
+        padding: 20px;
+    }
 
 }
 
 /*footeer*/
 
 section.footer{
-   
+    padding: 30px;    
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    color: var(--branco-texto); 
+    font-family: 'Andada Pro', serif;
 }
 
 /* Chegou a hora de se desafiar com a responsividade, 
 utilize como referência os breakpoints @media abaixo*/
 
 /*Tablet*/
+
+@media (max-width: 767px) {
+    .project-container { 
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Menu */
+    
+        section.menu {
+            
+            width: Fill (768px);
+            height: Fixed (56px);
+            display: flex;
+            justify-content: space-between;
+            padding: 16px 32px 16px 32px;
+            
+        }
+    
+        .menu__list__item {
+            display: none;
+        }
+    
+        .menu__list__item__contato {
+            display: block;
+        }
+    
+    
+    /*title*/
+        section.title {
+            width: Fill (768px);
+            height: Hug (210px);
+            padding: 32px;
+            gap: 32px;
+        }
+    
+        .title__container {
+            
+            width: Fixed (524px);
+            height: Hug (130px);
+            gap: 8px;
+        }
+    
+        .title__div {
+            gap: 30px;
+        }
+    
+        .title__profile {
+            width: 246px;
+            height: 246px;
+        }
+    
+    /*About*/
+        section.about {
+            display: flex;
+            width: 1200px;
+            height: Hug (286px);
+            padding: 32px;
+            gap: 10px;
+        }
+    
+        .about__container {
+            display: flex;
+            width: Fill (1000px);
+            height: Hug (222px);
+            gap: 16px;
+        }
+    
+        .about__paragraph {
+            width: auto;
+            height: 112px;
+            font-weight: 400;
+            font-size: 18px;
+            font-family: 'Open Sans', sans-serif;
+            line-height: 22.44px;
+            color:var(--cor-contraste);
+        }
+    
+    /*Skills*/
+        section.skills {
+            width: Fill (768px);
+            height: Hug (390px);
+            padding: 32px;
+            gap: 32px;
+            margin-left: 25px;
+        }
+    
+    
+    /*Hobbies*/
+    
+        section.hobbies {
+            width: Fill (768px);
+            height: Hug (390px);
+            padding: 32px;
+            gap: 32px;
+            margin-left: 25px;
+        }
+    
+    
+    /*Experiências acadêmicas*/
+    
+        section.academic {
+            width: 1200px;
+            height: Hug (390px);
+            padding: 32px;
+            gap: 32px;
+        }
+    
+    
+    /*Expeirência profissional*/
+        section.experience {
+            width: 1200px;
+            padding: 32px;
+            gap: 64px;
+    
+        }
+    
+        .experiencie__box {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    
+        .container {
+            flex-direction: column; 
+            align-items: center; 
+        }
+    
+        .sidebar {
+            width: 100%; 
+        }
+    
+        .content {
+            width: 100%; 
+            max-width: none; 
+        }
+    
+        .sidebar li {
+            text-align: center; 
+            border-left: none; 
+            border-bottom: 2px solid transparent; 
+        }
+    
+        .sidebar li:hover, .sidebar li.active {
+            border-left: none; 
+            border-bottom: 2px solid #ffb904; 
+        }
+    
+    /* formulário */
+    
+        section.formcontato {
+            width: 1200px;
+            padding: 32px;
+            gap: 10px;
+        }
+    
+        .formcontato__img { 
+            display: none;
+            width: 368px;
+            height: 368px;
+        } 
+    
+        .formcontato__contacto {
+           
+            width: Fill (1000px);
+            height: Hug (573px);
+            gap: 0;
+        }
+    
+        .formcontato__text {
+            width: Fill (1000px);
+            height: Hug (573px);   
+        }
+    
+        .formcontato__text__informations {
+            width: Fill (1000px);
+            height: Hug (573px);
+        }
+    
+        .formcontato__form {
+            width:  Fill (1000px);
+            height: Hug (56px);
+            gap: 8px;
+        }
+    
+        .formcontato__input {
+            width: 1000px;
+            height: 56px;
+            border-radius: 4px;
+            top: 8px;
+            padding: 0px 12px 0px 12px;
+            background-color: var(--branco-texto);
+        }
+    
+        .formcontato__textarea {
+            width: 1000px;
+            height: 133px;
+            border-radius: 4px;
+            background-color: var(--branco-texto);
+        }
+    
+        section.footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 1200px;
+            height:  Hug (102px);
+            padding: 32px;
+            gap: 10px;
+        }
+    
+        .footer__rodape {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+} 
+
 @media (min-width: 768px) {
 
 /* Menu */
@@ -458,12 +783,296 @@ utilize como referência os breakpoints @media abaixo*/
 /*Hobbies*/
 
 /*Experiências acadêmicas*/
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 /*Expeirência profissional*/
 
 }
 
 /*Mobile*/
+
+@media (max-width: 480px) {
+    section.academic {
+        padding: 20px; 
+    }
+
+    .academic__title {
+        font-size: 24px; 
+        line-height: 30px; 
+    }
+
+    .sidebar li {
+        padding: 10px 15px; 
+        font-size: 14px; 
+    }
+
+    .content {
+        padding: 10px; 
+    }
+
+    .container .experience-header {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .container .experience-header .date {
+        margin-top: 5px; 
+    }
+}
+
+@media (max-width: 425px) {
+
+    body {
+        width: 100%;
+    }
+
+    .all {
+       width: 390px;
+       height: auto;
+    }
+
+/*Menu*/
+    section.menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;  
+        
+    }
+
+     header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu__title {
+        font-family: 'Andada Pro', serif;
+ 
+        font-size: 35px;
+        line-height: 18.78px;
+        color:var(--texto-destaque);
+    }
+
+    .menu__list__item__contato {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 35px;
+        line-height: 18.78px;
+        color:var(--cor-contraste);
+    }
+
+
+/*Titulo*/
+    .title__div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title__bio {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 68.78px;
+        color:var(--cor-contraste);
+    }
+
+    .title__subsection {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 39.78px;
+        color:var(--cor-contraste);
+    }
+
+    .title__network {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 39.78px;
+        color:var(--cor-contraste);
+    }
+
+/*Sessão sobre*/
+
+    section.about {
+       height: 400px;
+       width: Fill (360px);
+       padding: 50px;
+       gap: 30px;
+    }
+
+    .about__container {
+        width: Fill 328px;
+        height: 400px;
+        gap: 30px;
+    }
+
+    .about__title {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 68.78px;
+        color:var(--cor-contraste);
+    }
+
+    .about__paragraph {
+        width: Fill (328px);
+        height: 208px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 29.78px;
+        color:var(--cor-contraste);
+        
+    }
+
+
+/*Skills*/  
+    section.skills {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100;
+        height: 1800px;
+        gap: 32px;
+    }
+
+    .skills__title {
+        width: 57px;
+        height: 100px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 65px;
+        line-height: 68.78px;
+        color:var(--cor-contraste);
+
+    }
+    .skills__line {
+        display: grid;
+        justify-content: center;
+        width: 1000px;
+        height: 100%;
+    }
+
+    .skills__box {
+        width: 800px;
+        height: 100%;
+    }
+
+    .skills__img__name {
+        display: block;
+        width: 300px;
+        height: 100%;
+        margin-top: 120px;
+       
+    }
+
+    .img {
+        height: 150px;
+        width: 100px;
+    }
+
+    .skills__name {
+        width: 200px;
+        height: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 28.78px;
+        color:var(--cor-contraste);
+        margin-top: 150px;
+    }
+
+
+/*Hobbies*/
+    section.hobbies {
+        display: none;
+    }
+
+/*Formação Acadêmica*/
+
+    section.academic {
+        height: 1200px;
+    }
+
+    .academic__courses {
+        display: grid;
+    }
+
+    .academic__courses__box {
+        height: 500px;
+    }
+
+    .academic__courses__list {
+        gap: 30px;
+    }
+
+    .academic__courses__item__title {
+        width: 600px;
+        text-align: center;
+        height: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 28.78px;
+    }
+
+    .academic__courses__item__subtitle {
+        width: 600px;
+        height: 30px;
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 35.78px;
+    }
+/*Experiência Profissional*/
+    .experience__title {
+        width: 600px;
+        height: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 28.78px;
+    }
+
+    .experience__text {
+        width: 600px;
+        height: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 35.78px;
+    }
+
+    .experience__description {
+        width: 500px;
+        height: 200px;
+    }
+
+    .experiencia__botao--repo {
+        width: 250px;
+        height: 130px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 35.78px;
+    }
+
+    .experiencia__botao--demo {
+        width: 250px;
+        height: 130px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 35.78px;
+    }
+
+}
+
 @media (min-width: 425px) {
 
 /*Menu*/
@@ -486,14 +1095,3 @@ utilize como referência os breakpoints @media abaixo*/
 
 }
 
-@media (min-width: 768px) {
-    .project-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 767px) {
-    .project-container { 
-        grid-template-columns: 1fr;
-    }
-}
