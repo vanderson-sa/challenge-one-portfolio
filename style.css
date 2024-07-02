@@ -2,27 +2,37 @@
 /*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
 coloque nas sessões indicadas*/
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root{
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
-   --cor-de-fundo: #F5F5F5;
-   --cor-de-link: #000;
+    --background-auxilio-2: #0e0e0e;
+    --background-auxilio: #131313;
+    --cor-contraste: #929292;
+    --background-destaque: #0b0b0b;
+    --branco-texto: #FFF;
+    --texto-destaque: #ffb904;
+    --cor-subtitulos: #996830;
 }
 
 body {
-    box-sizing: border-box;
-    background-color: var(--cor-de-fundo) ;
-    font-family: 'Raleway';
-    margin: 0;
-    padding: 0;
-    line-height: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-destaque);
+    font-family: 'Open Sans', sans-serif;
+    color: (var(--branco-texto));
 }
 ol, ul,li {
     list-style: none;
 }
 a{
     text-decoration: none;
-    color: var(--cor-de-link);
+    color: var(--cor-contraste);
 }
 
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
@@ -38,9 +48,40 @@ de usuário complexa, e permite a reutilização de código existente sem copiar
 Link da documentação oficial!
 https://en.bem.info/methodology/quick-start/*/
 
+.all {
+    display: flex;
+    flex-direction: column;
+}
+
 /*Sessão Menu*/
 
 section.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 88px;
+    padding: 0 32px;
+    header {
+        display: flex;
+        gap: 8px;
+    }
+    
+    .menu__title {
+        font-family: 'Andada Pro', serif;
+        color: #ffb904;
+    }
+    
+    .menu__list {
+        display: flex;
+        font-size: 16px;
+        gap: 32px;
+    }
+    
+    .menu__list__item__contato a {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        color: var(--cor-subtitulos);
+    }
 
 }
 
