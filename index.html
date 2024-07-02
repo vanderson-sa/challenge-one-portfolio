@@ -153,92 +153,89 @@
     <!-- Sessão de Histórico Acadêmico -->
     <section class="academic">
         <h2 class="academic__title" id="formacao">Formação acadêmica</h2>
-        <div class="academic__courses">
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src=""></li>
-                    <li class="academic__courses__item__title"><h4>Análise de dados</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2018 - UFPR</p></li>
+        <div class="container">
+            <div class="sidebar">
+                <ul>
+                    <li data-index="0">Universidade Paulista</li>
+                    <li data-index="1">DEVMedia</li>
+                    <li data-index="2">ONE</li>
                 </ul>
+                
             </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src=""></li>
-                    <li class="academic__courses__item__title"><h4>Formação ux Design</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>2019 - Alura</p></li>
-                </ul>
-            </div>
-            <div class="academic__courses__box">
-                <ul class="academic__courses__list">
-                    <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src=""></li>
-                    <li class="academic__courses__item__title"><h4>Pós-graduação design</h4></li>
-                    <li class="academic__courses__item__subtitle"><p>Em andamento - UFRJ</p></li>
-                </ul>
+            <div class="content">
+                <div class="experience" id="experience-0">
+                    <div class="experience-header">
+                        <h2>Design Gráfico</h2>
+                        <span class="date">Ago 2013 - Jul 2015</span>
+                    </div>
+                    <h4>Univesidade Paulista</h4>
+                    <p>Utilização de métodos e técnicas modernos no âmbito da Comunicação, formando profissionais capazes de atuar em comunicação, publicidade, propaganda e marketing de empresas industriais e de serviços.</p>
+                </div>
+                <div class="experience" id="experience-1" style="display: none;">
+                    <div class="experience-header">
+                        <h2>Desenvolvedor FrontEnd</h2>
+                        <span class="date">2024 - Primeiro Semestre</span>
+                    </div>
+                    <h4>DEVMedia</h4>
+                    <p>Desenvolvimento de interface gráfica do usuário de um site por meio do uso de HTML, CSS e JavaScript para que os usuários possam visualizar e interagir com esse site.</p>
+                </div>
+                <div class="experience" id="experience-2" style="display: none;">
+                    <div class="experience-header">
+                        <h2>Trilha FrontEnd</h2>
+                        <span class="date">2024 - Primeiro Semestre</span>
+                    </div>
+                    <h4>Oracle e Alura</h4>
+                    <p>O ONE é um programa de educação e empregabilidade com objetivo social de capacitar pessoas em tecnologia e conectá-las com o mercado de trabalho por meio de empresas parceiras.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Sessão de Experiência Profissional/Projetos-->
-    <section class="experience">
-        <h2 class="experience__section__title" id="xp">Experiência Profissional</h2>
-        <div class="experiencie__box">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="">
-            <div class="experience__info"
-                <h2 class="experience__title">Decodificador de texto</h2>
-                <h3 class="experience__text">Challenge Alura Codificador </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
-                    </div>
+    <section class="projeto">
+        <h2 class="experience__section__title" id="xp">Projetos</h2>
+        <div class="project-container">
+            <div class="card">
+                <div class="project-image-container">
+                    <div class="card-highlight"></div>
+                    <img class="project-image" src="./assets/capa_prozsite.png" alt="Capa do Site Projeto Proz Arts Studios">
+                </div>
+                <div class="card-title">Proz Arts Studios</div>
+                <div class="card-description">
+                    Projeto simples com o objetivo de usar todo o conhecimento obtido pelos alunos no curso Talento Cloud envolvendo a tríade da web: HTML, CSS e JavaScript e comandos com git e git flow.
+                </div>
+                <div class="card-technologies">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                </div>
+                <div class="button-container">
+                    <a href="https://github.com/ProzGames/ProzArts.git" target="_blank" class="button button-primary">Repositório</a>
+                    <a href="#" class="button button-secondary">Acessar o projeto</a>
+                </div>
             </div>
-        </div>  
-
-        <div class="experiencie__box">
-            <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="">
-            <div class="experience__info"
-                <h2 class="experience__title">Jogo criado com HTML, CSS e JavaScript</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
-                    </div>
+    
+            <div class="card">
+                <div class="project-image-container">
+                    <div class="card-highlight"></div>
+                    <img class="project-image" src="./assets/bootstrap_site.png" alt="Capa do site desenvolvido com Bootstrap">
+                </div>
+                <div class="card-title">Desafio com Bootstrap</div>
+                <div class="card-description">
+                    Projeto 3. Site desenvolvido com o framework Bootstrap, parte do desafio e pratica da mentoria do Programar com Você. Conteúdo parte de 33 desafios para prática com o framework.
+                </div>
+                <div class="card-technologies">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fa-brands fa-bootstrap"></i>
+                </div>
+                <div class="button-container">
+                    <a href="#" class="button button-primary">Repositório</a>
+                    <a href="#" class="button button-secondary">Acessar o projeto</a>
+                </div>
             </div>
-        </div>  
-
-        <div class="experiencie__box">
-            <!-- Insira a logo de seu projeto/trabalho -->
-            <img class="experience__img" src="">
-            <div class="experience__info"
-                <h2 class="experience__title">Decodificador de texto</h2>
-                <h3 class="experience__text">Challenge Alura Codificador </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
-                    </div>
-            </div>
-        </div>  
-
-        <div class="experiencie__box">
-            <!-- Insira a logo de seu projeto/trabalho -->
-            <img class="experience__img" src="">
-            <div class="experience__info"
-            <h2 class="experience__title">Jogo criado com HTML, CSS e JavaScript</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
-                    <div class="experience__description">
-                        <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
-                    </div>
         </div>
-        </div>  
+    </section>
 
         <!-- Sessão de Contato -->
         <section class="formcontato">

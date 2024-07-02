@@ -234,12 +234,200 @@ section.hobbies{
 /* Experiência Acadêmica*/
 
 section.academic{
+    padding: 50px;
+    background-color: var(--background-auxilio-2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    .academic__title {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 37.57px;
+        color: var(--cor-subtitulos);
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        color: var(--branco-texto);
+    }
+    
+    .container .experience-header{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+    }
+    
+    .container h4{
+        font-family: 'Archivo', sans-serif;
+        color: #996830;
+        padding-bottom: 10px;
+    }
+    
+    .date {
+        font-family: 'Archivo', sans-serif;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--cor-contraste);
+    }
+    
+    .sidebar {
+        width: 200px;
+        color: var(--cor-contraste);
+        position: relative;
+    }
+    
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .sidebar li {
+        font-family: 'Archivo', sans-serif;
+        padding: 15px 20px;
+        cursor: pointer;
+        position: relative;
+        border-left: 2px solid transparent;
+        border-color: var(--cor-contraste);
+        transition: background-color 0.3s, border-left 0.3s;
+    }
+    
+    .sidebar li:hover {
+        font-weight: bold;
+        color: var(--branco-texto);
+        background-color: var(--background-destaque);
+        border-left: 1px solid #ffb904;
+    }
+    
+    .sidebar li.active {
+        font-weight: bold;
+        color: var(--cor-subtitulos);
+        background-color: var(--background-destaque);
+        border-left: 2px solid #ffb904;
+    }
+    
+    .content {
+        flex: 1;
+        padding: 20px;
+        overflow-y: auto;
+        max-width: 900px;
+        gap: 20px;
+    }
 
 }
 
 /* experiência*/
 
-section.experience{
+section.projeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    gap: 32px;
+
+    .experience__section__title {
+        color: var(--cor-subtitulos);
+        font-size: 32px;
+    }
+    
+    .project-container { 
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+        max-width: 1200px;
+        box-sizing: border-box;
+    }
+
+    .card {
+        border-radius: 4px;
+        padding: 20px;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-family: 'Archivo', sans-serif;
+        color: var(--cor-subtitulos);
+    }
+    
+    .project-image-container {
+        position: relative;
+        width: 100%;
+    }
+    
+    .project-image {
+        width: 100%;
+        border-radius: 4px;
+    }
+    
+    .card-highlight {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: var(--cor-subtitulos);
+        border-radius: 4px 0px 0px 4px;
+    }
+    
+    .card-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        margin: 20px 0 10px 0;
+    }
+    
+    .card-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        margin-bottom: 10px;
+        color: var(--branco-texto);
+    }
+    
+    .card-technologies {
+        display: flex;
+        font-size: 30px;
+        padding: 0px 0px 20px 0px;
+        gap: 10px;
+    }
+    
+    .button-container {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 40px;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 16px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .button-primary {
+        background: var(--cor-subtitulos);
+        color: var(--background-auxilio-2);
+    }
+    
+    .button-secondary {
+        background: #0E0E0E;
+        border: 2px solid var(--cor-subtitulos);
+        color: var(--cor-subtitulos);
+    }
 
 }
 
@@ -296,4 +484,16 @@ utilize como referência os breakpoints @media abaixo*/
 
 /*Footer*/
 
+}
+
+@media (min-width: 768px) {
+    .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .project-container { 
+        grid-template-columns: 1fr;
+    }
 }
