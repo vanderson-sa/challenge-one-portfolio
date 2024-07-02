@@ -88,13 +88,80 @@ section.menu{
 /*Sessão Title*/
 
 section.title{
+    .title__div {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--background-auxilio-2);
+        padding: 32px;
+        gap: 8%;
+    }
+    
+    .title__profile {
+        width: 368px;
+        height: 368px;
+    }
+    
+    .title__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .title__bio {
+        font-family: 'Andada Pro', serif;
+        font-weight: 700;
+        font-size: 55px;
+        color: var(--branco-texto);
+    }
+    
+    h3, .title__subsection {
+        font-family: 'Archivo', sans-serif;
+        color: var(--cor-subtitulos);
+        letter-spacing: 0.9px;
+    }
+    
+    .title__network {
+        display: flex;
+        gap: 32px;
+    }
 
 }
 
 /*Sessão About*/
 
 section.about{
-
+    align-self: center;
+    padding: 64px;
+    background-color: var(--background-destaque);
+    
+    .about__container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .about__title {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        color: var(--cor-subtitulos);
+        line-height: 37.57px;
+    }
+    
+    .about__paragraph {
+        max-width: 1000px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        color: var(--branco-texto);
+        line-height: 20px;
+    }
+    
+    #subtitle {
+        color: var(--cor-contraste);
+    }
 }
 
 /*Sessão Hobbies*/
